@@ -81,107 +81,88 @@ channel_metadata = {
         'channel_name': '16',
         'channel_logo': 'https://yt3.googleusercontent.com/ou3JhDnH8ChdzRKooH5hGjTRGKpr9dGhi7lv7QW2zgmrnme0HbPKc8qI3yu8ZdI6NZna-CdJFw=s160-c-k-c0x00ffffff-no-rj',
     },
-    'UCSjPe5kinQtwcyHcFJyyMfw': {  # DD NATIONAL
-         'group_title': 'News',
-         'channel_name': '17',
-         'channel_logo': 'https://yt3.googleusercontent.com/d8QNkJ7Jby9hVSTm67-E4nfbI-7CTgP262NPVGfYpoTZaxLw7uAOPxs5dJtARjEFQijsRsuiFQ=s160-c-k-c0x00ffffff-no-rj',
-    },
     'UCIAnlTV3O9NYWMI-DwYZaWg': {  # DD BHARTI
          'group_title': 'News',
-         'channel_name': '18',
+         'channel_name': '17',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_nvgVv3ZKeS6nLI_ZGZw-pZpt88bQpFPZNbUOADI3Bvz9k=s160-c-k-c0x00ffffff-no-rj',
-    },
-    'UCISgnSNwqQ2i8lhCun3KtQg': {  # SANSAD TV1
-         'group_title': 'News',
-         'channel_name': '19',
-         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UCISgnSNwqQ2i8lhCun3KtQg': {  # SANSAD TV2
          'group_title': 'News',
-         'channel_name': '20',
+         'channel_name': '18',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UCQIycDaLsBpMKjOCeaKUYVg': {  # CNBC AAWAZ
          'group_title': 'News',
-         'channel_name': '21',
+         'channel_name': '19',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UCkXopQ3ubd-rnXnStZqCl2w': {  # ZEE BUISENESS
          'group_title': 'News',
-         'channel_name': '22',
+         'channel_name': '20',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UCv3rFzn-GHGtqzXiaq3sWNg': {  # NDTV PROFIT PRIME
          'group_title': 'News',
-         'channel_name': '23',
+         'channel_name': '21',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UC3uJIdRFTGgLWrUziaHbzrg': {  # NDTV PROFIT
          'group_title': 'News',
-         'channel_name': '24',
+         'channel_name': '22',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UCD3CdwT8lTCe5ZGHbUBxmWA': {  # ET NOW SWADESH
          'group_title': 'News',
-         'channel_name': '25',
+         'channel_name': '23',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UCYPvAwZP8pZhSMW8qs7cVCw': {  # INDIA TODAY
          'group_title': 'News',
-         'channel_name': '26',
+         'channel_name': '24',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UCef1-8eOpJgud7szVPlZQAQ': {  # CNN NEWS18
          'group_title': 'News',
-         'channel_name': '27',
+         'channel_name': '25',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UCZFMm1mMw0F81Z37aaEzTUA': {  # NDTV 24X7
          'group_title': 'News',
-         'channel_name': '28',
+         'channel_name': '26',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UCz8QaiQxApLq8sLNcszYyJw': {  # FIRST POST
          'group_title': 'News',
-         'channel_name': '29',
+         'channel_name': '27',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UCwqusr8YDwM-3mEYTDeJHzw': {  # REPUBLIC WORLD
          'group_title': 'News',
-         'channel_name': '30',
+         'channel_name': '28',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UCytSP0M0Jdnw6qIy3Y-nTig': {  # NEWSX
          'group_title': 'News',
-         'channel_name': '31',
+         'channel_name': '29',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UCWk-7Yosyvzln9ZzJg8BvVg': {  # RAJASTHAN PATRIKA
          'group_title': 'News',
-         'channel_name': '32',
+         'channel_name': '30',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UC3Qk0GlU1Cnd4lkK6GFefRA': {  # NDTV RAJASTHAN
          'group_title': 'News',
-         'channel_name': '33',
+         'channel_name': '31',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'UCfnvGSUXKIuaCv-9E9a2UJg': {  # ZEE RAJASTHAN
          'group_title': 'News',
-         'channel_name': '34',
-         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
-    },
-    'UC7FlLbNo66YsCEAPuJITiNg': {  # NEWS18 RAJASTHAN
-         'group_title': '35',
-         'channel_name': 'ABP Ananda',
-         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
-    },
-    'UCv3rFzn-GHGtqzXiaq3sWNg': {  # SANSAD TV1
-         'group_title': 'News',
-         'channel_name': 'ABP Ananda',
+         'channel_name': '32',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
 }
+
 
 
 
