@@ -31,9 +31,9 @@ def get_user_agent():
         f"Chrome/{major}.0.{build}.{patch} Safari/537.36"
     )
 
-# --- Get live YouTube URL ---
-def get_live_watch_url(channel_id):
-    url = f"https://www.youtube.com/channel/{channel_id}/live"
+# --- Get live YouTube URL (from video ID) ---
+def get_live_watch_url(video_id):
+    url = f"https://www.youtube.com/watch?v={video_id}"
     ydl_opts = {
         'cookiefile': cookies_file_path,
         'force_ipv4': True,
@@ -53,17 +53,13 @@ def get_live_watch_url(channel_id):
             if not info:
                 return None
 
+            # Ensure video is live
             if info.get("is_live"):
                 return info.get("webpage_url") or f"https://www.youtube.com/watch?v={info['id']}"
-
-            if "entries" in info:
-                for entry in info["entries"]:
-                    if entry.get("is_live"):
-                        return entry.get("webpage_url") or f"https://www.youtube.com/watch?v={entry['id']}"
-    except yt_dlp.utils.DownloadError as e:
+    except yt_dlp.utils.DownloadError:
         return None
     except Exception as e:
-        logger.error(f"Unexpected error for channel {channel_id}: {e}")
+        logger.error(f"Unexpected error for video {video_id}: {e}")
         return None
 
     return None
@@ -122,16 +118,16 @@ def save_m3u_file(output_data, base_filename="YT_playlist"):
 def main():
     output_data = []
 
-    for channel_id, metadata in channel_metadata.items():
+    for video_id, metadata in channel_metadata.items():  # <-- video_id instead of channel_id
         group_title = metadata.get('group_title', 'Others')
         channel_name = metadata.get('channel_name', 'Unknown')
         channel_logo = metadata.get('channel_logo', '')
 
         logger.info(f"Checking channel: {channel_name}")
 
-        live_link = get_live_watch_url(channel_id)
+        live_link = get_live_watch_url(video_id)
         if not live_link:
-            logger.warning(f"Skipping {channel_name}: no live video found")
+            logger.warning(f"Skipping {channel_name}: not live")
             continue
 
         m3u8_link = get_stream_url(live_link)
