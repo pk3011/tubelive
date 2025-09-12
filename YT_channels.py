@@ -16,7 +16,7 @@ channel_metadata = {
         'channel_name': '3',
         'channel_logo': 'https://yt3.googleusercontent.com/M8Rqad6_uN86mMSvd9KGkE5G2mrVAgvfTV-VCsQb6jhfF5hEbcQCEJiInih4wb2fMQ_RG7Ku=s160-c-k-c0x00ffffff-no-rj',
     },
-    'UCZFMm1mMw0F81Z37aaEzTUA': {  # NDTV INDIA
+    'UC9CYT9gSNLevX5ey2_6CK0Q': {  # NDTV INDIA
         'group_title': 'News',
         'channel_name': '4',
         'channel_logo': 'https://yt3.googleusercontent.com/M8Rqad6_uN86mMSvd9KGkE5G2mrVAgvfTV-VCsQb6jhfF5hEbcQCEJiInih4wb2fMQ_RG7Ku=s160-c-k-c0x00ffffff-no-rj',
@@ -182,6 +182,7 @@ channel_metadata = {
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
 }
+
 
 
 
