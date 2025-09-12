@@ -6,62 +6,62 @@ channel_metadata = {
         'channel_name': '1',
         'channel_logo': 'https://yt3.googleusercontent.com/66cO7vPXs2Xssf6fq2cn90oDsJ3OFMThb57qfRkRMjaSqg3ouTG6m9WQKZFg6GmUS5G8wkPu7ik=s72-c-k-c0x00ffffff-no-rj',
     },
-    'UCRWFSbif-RFENbBrSiez1DA': {  # ABP NEWS
+    'nyd-xznCpJc': {  # ABP NEWS
         'group_title': 'News',
         'channel_name': '2',
         'channel_logo': 'https://yt3.googleusercontent.com/8Q8MCd6ypr2Hzbp60VE_stJPl063kQYfeTxdIQkAXRfhdzxByLl0sJYHsk43uTM4W_cOzwcbPQ=s160-c-k-c0x00ffffff-no-rj',
     },
-    'UCIvaYmXn910QMdemBG3v1pQ': {  # ZEE NEWS
+    'WquRAK-XoV4': {  # ZEE NEWS
         'group_title': 'News',
         'channel_name': '3',
         'channel_logo': 'https://yt3.googleusercontent.com/M8Rqad6_uN86mMSvd9KGkE5G2mrVAgvfTV-VCsQb6jhfF5hEbcQCEJiInih4wb2fMQ_RG7Ku=s160-c-k-c0x00ffffff-no-rj',
     },
-    'UC9CYT9gSNLevX5ey2_6CK0Q': {  # NDTV INDIA
+    'MN8p-Vrn6G0': {  # NDTV INDIA
         'group_title': 'News',
         'channel_name': '4',
         'channel_logo': 'https://yt3.googleusercontent.com/M8Rqad6_uN86mMSvd9KGkE5G2mrVAgvfTV-VCsQb6jhfF5hEbcQCEJiInih4wb2fMQ_RG7Ku=s160-c-k-c0x00ffffff-no-rj',
     },
-    'UCuzS3rPQAYqHcLWqOFuY0pw': {  # NEWS24
+    'rNeMNlTKd48': {  # NEWS24
         'group_title': 'News',
         'channel_name': '5',
         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_mcjICfjqYwOn4eljNmtsZLBpOmW0t0JlzJUhXSslAkBVo=s160-c-k-c0x00ffffff-no-rj',
     },
-    'UCttspZesZIDEwwpVIgoZtWQ': {  # INDIA TV
+    'Xmm3Kr5P1Uw': {  # INDIA TV
         'group_title': 'News',
         'channel_name': '6',
         'channel_logo': 'https://yt3.googleusercontent.com/Jw5N_GsIqsDis5cvYkAlJZFU2Z3m_6q6GaTdmUK0hJ4bsadl4He51sFu1LoCGKmf3QiTG-9P5G4=s160-c-k-c0x00ffffff-no-rj',
     },
-    'UCPP3etACgdUWvizcES1dJ8Q': {  # NEWS18 INDIA
+    'YgCni-fhTKw': {  # NEWS18 INDIA
         'group_title': 'News',
         'channel_name': '7',
         'channel_logo': 'https://yt3.googleusercontent.com/NgVaE3RsOhC9cIV_6kTp0h2ikrHIFG8QPJF5IrRg_nPiQbQeG-dzK5SHLmi_MDEyVNj73aeSHg=s160-c-k-c0x00ffffff-no-rj',
     },
-    'UCOutOIcn_oho8pyVN3Ng-Pg': {  # TV9 BHARATVARSH
+    'nSpwwcHVp80': {  # TV9 BHARATVARSH
         'group_title': 'News',
         'channel_name': '8',
         'channel_logo': 'https://yt3.googleusercontent.com/Yv5b1h00Dj_JkJsCD8IEuodFSRq3hFiFi0AQc-W5JrJkrAyX98lxWGUUhjqZzOA-NU5LwUzU=s160-c-k-c0x00ffffff-no-rj',
     },
-    'UC7wXt18f2iA3EDXeqAVuKng': {  # R BHARAT
+    '3DbTO_AMhhc': {  # R BHARAT
         'group_title': 'News',
         'channel_name': '9',
         'channel_logo': 'https://yt3.googleusercontent.com/bn7BHmnbqkIJMoQWzUk3K5Wzzt_mVgVdjQ5XV8PWdQS18_w4ZVZOSFwe_ZIKaO3KitQPVuQczA=s160-c-k-c0x00ffffff-no-rj',
     },
-    'UCMk9Tdc-d1BIcAFaSppiVkw': {  # TIMES NOW NAVBHARAT
+    'cjQHUxUoIkA': {  # TIMES NOW NAVBHARAT
         'group_title': 'News',
         'channel_name': '10',
         'channel_logo': 'https://yt3.googleusercontent.com/DdtUl06VkqvZvr9aDFP6iX-qxWxV5Aqlk1d4mTUdD1E34wwX333DKo56iJiSJ3hojEeeW_kVzEc=s160-c-k-c0x00ffffff-no-rj',
     },
-    'UCsNdeLwEZf86swPD3qJJ7Dw': {  # NEWS NATION
+    '9BWncKJwWAI': {  # NEWS NATION
         'group_title': 'News',
         'channel_name': '11',
         'channel_logo': 'https://yt3.googleusercontent.com/ceDID2koAfvhvykNroiBjW4SkTrkGVrjFk1EkWRz8SZdhV_dFsCtuJ3w9l0D-y06VgHjvB-WqA=s160-c-k-c0x00ffffff-no-rj',
     },
-    'UCCQmi1Bd-_tHRm6M2uPlGUA': {  # BHARAT24
+    'ulHLeKuTdJ4': {  # BHARAT24
         'group_title': 'News',
         'channel_name': '12',
         'channel_logo': 'https://yt3.googleusercontent.com/e5-tNNraLRpGlwIoDtdKvaqVzqxswudmLbQXyTMPqYVdxLWTmz1TJRPC4G0PbOYVJta_oGZAUGs=s72-c-k-c0x00ffffff-no-rj',
     },
-    'UCafYgzpyw7aIUYOLjjADu7w': {  # NEWS18 UP
+    'pVXYxHNwJo8': {  # NEWS18 UP
         'group_title': 'News',
         'channel_name': '13',
         'channel_logo': 'https://yt3.googleusercontent.com/FK8kaDWHXG4F4yCVGbGP9gE5hNOOTBTXof6KFMrhj3BZ2yW0oHy7PxJRRP8QdMZfGWCNTG3L4g=s72-c-k-c0x00ffffff-no-rj',
@@ -162,6 +162,7 @@ channel_metadata = {
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
 }
+
 
 
 
