@@ -1,14 +1,14 @@
 # Your channel metadata dictionary
 channel_metadata = {
-    # --- News Channels (Bangladesh) ---
-    'UCWVqdPTigfQ-cSNwG7O9MeA': {  # EKHON TV
-        'group_title': 'Bangla News',
-        'channel_name': 'BD | EKHON TV',
+    # --- News Channels (INDIA) ---
+    'UCt4t-jeY85JegMlZ-E5UWtA': {  # AAJTAK
+        'group_title': 'News',
+        'channel_name': '1',
         'channel_logo': 'https://yt3.googleusercontent.com/66cO7vPXs2Xssf6fq2cn90oDsJ3OFMThb57qfRkRMjaSqg3ouTG6m9WQKZFg6GmUS5G8wkPu7ik=s72-c-k-c0x00ffffff-no-rj',
     },
-    'UCHLqIOMPk20w-6cFgkA90jw': {  # Channel 24
-        'group_title': 'Bangla News',
-        'channel_name': 'BD | Channel 24',
+    'UCRWFSbif-RFENbBrSiez1DA': {  # ABP NEWS
+        'group_title': 'News',
+        'channel_name': '2',
         'channel_logo': 'https://yt3.googleusercontent.com/8Q8MCd6ypr2Hzbp60VE_stJPl063kQYfeTxdIQkAXRfhdzxByLl0sJYHsk43uTM4W_cOzwcbPQ=s160-c-k-c0x00ffffff-no-rj',
     },
     'UCtqvtAVmad5zywaziN6CbfA': {  # Ekattor TV
@@ -127,6 +127,7 @@ channel_metadata = {
         'channel_logo': 'https://yt3.googleusercontent.com/plbYMBlbSJHXOLEqCE4tCFPkw-WwoZ5y-oI4M1l5dljjOFMrQj9g_ZYTb5Fu8t_y8weRNR4iHQ=s160-c-k-c0x00ffffff-no-rj',
     },
 }
+
 
 
 
