@@ -121,47 +121,47 @@ channel_metadata = {
          'channel_name': '24',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
-    'JNGqA6srCSg': {  # CNN NEWS18
+    'uoK1dFpMo98': {  # NDTV 24X7
          'group_title': 'News',
          'channel_name': '25',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
-    'uoK1dFpMo98': {  # NDTV 24X7
+    'EKZ9o6kApH0': {  # REPUBLIC WORLD
          'group_title': 'News',
          'channel_name': '26',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
-    'EKZ9o6kApH0': {  # REPUBLIC WORLD
+    'IpFNj49tIQ0': {  # NEWSX
          'group_title': 'News',
          'channel_name': '27',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
-    'IpFNj49tIQ0': {  # NEWSX
+    'u53edpk-3W8': {  # RAJASTHAN PATRIKA
          'group_title': 'News',
          'channel_name': '28',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
-    'u53edpk-3W8': {  # RAJASTHAN PATRIKA
+    'twNR76vXOJo': {  # NDTV RAJASTHAN
          'group_title': 'News',
          'channel_name': '29',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
-    'twNR76vXOJo': {  # NDTV RAJASTHAN
+    'Y1n2Ur_rMZg': {  # News18 RAJASTHAN
          'group_title': 'News',
          'channel_name': '30',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
-    'Y1n2Ur_rMZg': {  # News18 RAJASTHAN
+    'JNGqA6srCSg': {  # FIRST POST
          'group_title': 'News',
          'channel_name': '31',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
-    '9gBSXsUWI0w': {  # FIRST POST
+    'AycUJ5Ygo-E': {  # CNN NEWS18
          'group_title': 'News',
-         'channel_name': '32',
-         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
+         'channel_name': '9gBSXsUWI0w'  'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
 }
+
 
 
 
