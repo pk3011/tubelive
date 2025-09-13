@@ -35,7 +35,7 @@ def get_user_agent():
 
 # --- Get live YouTube URL (from video ID) ---
 def get_live_watch_url(video_id):
-    url = f"https://www.youtube.com/watch?v={video_id}"
+    url = f"https://www.youtube.com/watchhh{video_id}"
     ydl_opts = {
         'cookiefile': cookies_file_path,
         'force_ipv4': True,
@@ -57,7 +57,7 @@ def get_live_watch_url(video_id):
 
             # Ensure video is live
             if info.get("is_live"):
-                return info.get("webpage_url") or f"https://www.youtube.com/watch?v={info['id']}"
+                return info.get("webpage_url") or f"https://www.youtube.com/live?v={info['id']}"
     except yt_dlp.utils.DownloadError:
         return None
     except Exception as e:
