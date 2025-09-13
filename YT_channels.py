@@ -156,12 +156,72 @@ channel_metadata = {
          'channel_name': '31',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
+    'JNGqA6srCSg': {  # FIRST POST
+         'group_title': 'News',
+         'channel_name': '31',
+         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
+    },
+    'JNGqA6srCSg': {  # FIRST POST
+         'group_title': 'News',
+         'channel_name': '31',
+         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
+    },
+    'JNGqA6srCSg': {  # FIRST POST
+         'group_title': 'News',
+         'channel_name': '31',
+         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
+    },
+    'JNGqA6srCSg': {  # FIRST POST
+         'group_title': 'News',
+         'channel_name': '31',
+         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
+    },
+    'JNGqA6srCSg': {  # FIRST POST
+         'group_title': 'News',
+         'channel_name': '31',
+         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
+    },
+    'JNGqA6srCSg': {  # FIRST POST
+         'group_title': 'News',
+         'channel_name': '31',
+         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
+    },
+    'JNGqA6srCSg': {  # FIRST POST
+         'group_title': 'News',
+         'channel_name': '31',
+         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
+    },
+    'JNGqA6srCSg': {  # FIRST POST
+         'group_title': 'News',
+         'channel_name': '31',
+         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
+    },
+    'JNGqA6srCSg': {  # FIRST POST
+         'group_title': 'News',
+         'channel_name': '31',
+         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
+    },
+    'JNGqA6srCSg': {  # FIRST POST
+         'group_title': 'News',
+         'channel_name': '31',
+         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
+    },
+    'JNGqA6srCSg': {  # FIRST POST
+         'group_title': 'News',
+         'channel_name': '31',
+         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj'POS
+    'JNGqA6srCSg': {  # FIRST POST
+         'group_title': 'News',
+         'channel_name': '31',
+         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
+    },
     'AycUJ5Ygo-E': {  # CNN NEWS18
          'group_title': 'News',
          'channel_name': '32',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
 }
+
 
 
 
