@@ -1,4 +1,4 @@
-import random
+liveandom
 import datetime
 import yt_dlp
 import os
@@ -57,7 +57,7 @@ def get_live_watch_url(video_id):
 
             # Ensure video is live
             if info.get("is_live"):
-                return info.get("webpage_url") or f"https://www.youtube.com/live?v={info['id']}"
+                return info.get("webpage_url") or f"https://www.youtube.com/watch?v={info['id']}"
     except yt_dlp.utils.DownloadError:
         return None
     except Exception as e:
