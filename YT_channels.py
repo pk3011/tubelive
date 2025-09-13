@@ -159,8 +159,8 @@ channel_metadata = {
          'channel_name': '32',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
-    'L0RktSIM980': { # NTV TELUGU    
-        'group_title': 'News',
+    'L7lLhN0guGI': { # NTV TELUGU    
+         'group_title': 'News',
          'channel_name': '33',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
@@ -206,13 +206,14 @@ channel_metadata = {
     },
     'JNGqA6srCSg': {  # FIRST POST
          'group_title': 'News',
-         'channel_name': '43',
+         'channel_name': '42',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
     'AycUJ5Ygo-E': {  # CNN NEWS18
          'group_title': 'News',
-         'channel_name': '44',
+         'channel_name': '43',
          'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
 
 }
+
