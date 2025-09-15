@@ -38,10 +38,9 @@ jobs:
         python YT_get_YouTube_link.py
         mv YT_playlist.m3u YT_playlist_YT.m3u
 
-    - name: Run YTC_get_YouTube_link.py (save as YT_playlist_YTC.m3u)
+    - name: Run YTC_get_YouTube_link.py (produces YT_playlist_YTC.m3u)
       run: |
         python YTC_get_YouTube_link.py
-        mv YT_playlist_YTC.m3u YT_playlist_YTC.m3u  # ensure filename consistent
 
     - name: Merge playlists into final YT_playlist.m3u
       run: |
@@ -72,4 +71,3 @@ jobs:
             git commit -m "Update YouTube playlists ($(date '+%Y-%m-%d %H:%M:%S'))"
             git push
         fi
-        
