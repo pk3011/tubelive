@@ -106,7 +106,7 @@ def format_live_link(channel_name, channel_logo, m3u8_link, group_title):
     )
 
 # --- Save M3U file ---
-def save_m3u_file(output_data, base_filename="YT_playlist"):
+def save_m3u_file(output_data, base_filename="YT_playlist_YTC"):
     filename = f"{base_filename}.m3u"
 
     with open(filename, "w", encoding="utf-8") as file:
