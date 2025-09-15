@@ -34,7 +34,7 @@ def get_user_agent():
     )
 
 # --- Get live YouTube URL (from video ID) ---
-def get_live_watch_url(video_id):
+def get_live_watch_url(channel_id):
     url = f"https://www.youtube.com/channel/{channel_id}/live"
     ydl_opts = {
         'cookiefile': cookies_file_path,
