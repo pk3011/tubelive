@@ -1,5 +1,4 @@
 import random
-import time
 import datetime
 import yt_dlp
 import os
@@ -19,6 +18,9 @@ cookies_file_path = 'cookies.txt'
 if not os.path.exists(cookies_file_path):
     raise FileNotFoundError(f"Missing cookies file: {cookies_file_path}")
 
+# --- Fallback m3u8 ---
+FALLBACK_M3U8 = "https://raw.githubusercontent.com/benmoose39/YouTube_to_m3u/refs/heads/main/assets/moose-403.m3u8"
+
 # --- User-Agent generator ---
 def get_user_agent():
     versions = [
@@ -31,8 +33,8 @@ def get_user_agent():
         f"Chrome/{major}.0.{build}.{patch} Safari/537.36"
     )
 
-# --- Get live YouTube URL ---
-def get_live_watch_url(channel_id):
+# --- Get live YouTube URL (from video ID) ---
+def get_live_watch_url(video_id):
     url = f"https://www.youtube.com/channel/{channel_id}/live"
     ydl_opts = {
         'cookiefile': cookies_file_path,
@@ -53,17 +55,13 @@ def get_live_watch_url(channel_id):
             if not info:
                 return None
 
+            # Ensure video is live
             if info.get("is_live"):
                 return info.get("webpage_url") or f"https://www.youtube.com/watch?v={info['id']}"
-
-            if "entries" in info:
-                for entry in info["entries"]:
-                    if entry.get("is_live"):
-                        return entry.get("webpage_url") or f"https://www.youtube.com/watch?v={entry['id']}"
-    except yt_dlp.utils.DownloadError as e:
+    except yt_dlp.utils.DownloadError:
         return None
     except Exception as e:
-        logger.error(f"Unexpected error for channel {channel_id}: {e}")
+        logger.error(f"Unexpected error for video {video_id}: {e}")
         return None
 
     return None
@@ -122,22 +120,22 @@ def save_m3u_file(output_data, base_filename="YT_playlist"):
 def main():
     output_data = []
 
-    for channel_id, metadata in channel_metadata.items():
+    for video_id, metadata in channel_metadata.items():  # <-- video_id instead of channel_id
         group_title = metadata.get('group_title', 'Others')
         channel_name = metadata.get('channel_name', 'Unknown')
         channel_logo = metadata.get('channel_logo', '')
 
         logger.info(f"Checking channel: {channel_name}")
 
-        live_link = get_live_watch_url(channel_id)
+        live_link = get_live_watch_url(video_id)
         if not live_link:
-            logger.warning(f"Skipping {channel_name}: no live video found")
-            continue
-
-        m3u8_link = get_stream_url(live_link)
-        if not m3u8_link:
-            logger.warning(f"Skipping {channel_name}: no stream link found")
-            continue
+            logger.warning(f"{channel_name}: not live → using fallback")
+            m3u8_link = FALLBACK_M3U8
+        else:
+            m3u8_link = get_stream_url(live_link)
+            if not m3u8_link:
+                logger.warning(f"{channel_name}: no stream link → using fallback")
+                m3u8_link = FALLBACK_M3U8
 
         formatted_info = format_live_link(
             channel_name, channel_logo, m3u8_link, group_title
