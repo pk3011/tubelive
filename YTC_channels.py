@@ -98,7 +98,13 @@ channel_metadata = {
         'channel_name': '119',
         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
+    'UC8Xb-hkR53QVN4GlUHi1iZg': {  # Bharat samachar
+        'group_title': 'news',
+        'channel_name': '120',
+        'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
+    },
 }
+
 
 
 
