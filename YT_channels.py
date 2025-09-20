@@ -1,4 +1,4 @@
-channel_metadata = {
+'ulHLeKuTdJ4'ata = {
     'Nq2wYlWFucg': {  # AAJTAK
         'group_title': 'News',
         'channel_name': '1',
@@ -54,7 +54,7 @@ channel_metadata = {
         'channel_name': '11',
         'channel_logo': 'https://yt3.googleusercontent.com/ceDID2koAfvhvykNroiBjW4SkTrkGVrjFk1EkWRz8SZdhV_dFsCtuJ3w9l0D-y06VgHjvB-WqA=s160-c-k-c0x00ffffff-no-rj',
     },
-    'ulHLeKuTdJ4': {  # BHARAT24
+    'xxdUVlLLu_o': {  # BHARAT24
         'group_title': 'News',
         'channel_name': '12',
         'channel_logo': 'https://yt3.googleusercontent.com/e5-tNNraLRpGlwIoDtdKvaqVzqxswudmLbQXyTMPqYVdxLWTmz1TJRPC4G0PbOYVJta_oGZAUGs=s72-c-k-c0x00ffffff-no-rj',
@@ -145,6 +145,7 @@ channel_metadata = {
         'channel_logo': 'https://yt3.googleusercontent.com/66cO7vPXs2Xssf6fq2cn90oDsJ3OFMThb57qfRkRMjaSqg3ouTG6m9WQKZFg6GmUS5G8wkPu7ik=s72-c-k-c0x00ffffff-no-rj',
     },
 }
+
 
 
 
