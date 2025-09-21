@@ -1,4 +1,4 @@
-{
+channel_metadata = {
     'Nq2wYlWFucg': {  # AAJTAK
         'group_title': 'News',
         'channel_name': '1',
@@ -145,6 +145,7 @@
         'channel_logo': 'https://yt3.googleusercontent.com/66cO7vPXs2Xssf6fq2cn90oDsJ3OFMThb57qfRkRMjaSqg3ouTG6m9WQKZFg6GmUS5G8wkPu7ik=s72-c-k-c0x00ffffff-no-rj',
     },
 }
+
 
 
 
