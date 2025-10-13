@@ -69,7 +69,7 @@ channel_metadata = {
         'channel_name': '14',
         'channel_logo': 'https://yt3.googleusercontent.com/ZcYmoynvuv7AIJwnPon5Hq10hNUK2Ct-TA-nYvW8joYyvbAG9ZCg9aiUypHdpfzY-xT7R5KnJqU=s72-c-k-c0x00ffffff-no-rj',
     },
-    'ft_IQxMBshs': {  # DD NEWS
+    '9bTteEYoX6I': {  # DD NEWS
         'group_title': 'News',
         'channel_name': '15',
         'channel_logo': 'https://yt3.googleusercontent.com/0pVAsTdgTX-iREI9xZUMsYbqjpclujOiC7mocZIvLlWYVmhKRP131kzwVzM-i63lQz2YMMXo=s160-c-k-c0x00ffffff-no-rj',
@@ -145,6 +145,7 @@ channel_metadata = {
         'channel_logo': 'https://yt3.googleusercontent.com/66cO7vPXs2Xssf6fq2cn90oDsJ3OFMThb57qfRkRMjaSqg3ouTG6m9WQKZFg6GmUS5G8wkPu7ik=s72-c-k-c0x00ffffff-no-rj',
     },
 }
+
 
 
 
