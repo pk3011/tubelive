@@ -44,7 +44,7 @@ channel_metadata = {
         'channel_name': '9',
         'channel_logo': 'https://yt3.googleusercontent.com/bn7BHmnbqkIJMoQWzUk3K5Wzzt_mVgVdjQ5XV8PWdQS18_w4ZVZOSFwe_ZIKaO3KitQPVuQczA=s160-c-k-c0x00ffffff-no-rj',
     },
-    'cjQHUxUoIkA': {  # TIMES NOW NAVBHARAT
+    '77qMaUtV030': {  # TIMES NOW NAVBHARAT
         'group_title': 'News',
         'channel_name': '10',
         'channel_logo': 'https://yt3.googleusercontent.com/DdtUl06VkqvZvr9aDFP6iX-qxWxV5Aqlk1d4mTUdD1E34wwX333DKo56iJiSJ3hojEeeW_kVzEc=s160-c-k-c0x00ffffff-no-rj',
@@ -145,6 +145,7 @@ channel_metadata = {
         'channel_logo': 'https://yt3.googleusercontent.com/66cO7vPXs2Xssf6fq2cn90oDsJ3OFMThb57qfRkRMjaSqg3ouTG6m9WQKZFg6GmUS5G8wkPu7ik=s72-c-k-c0x00ffffff-no-rj',
     },
 }
+
 
 
 
