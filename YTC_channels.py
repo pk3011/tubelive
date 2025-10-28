@@ -1,4 +1,3 @@
-
 channel_metadata = {
     # --- News Channels (Bangladesh) ---
     'UC3Qk0GlU1Cnd4lkK6GFefRA': {  # NDTV RAJASTHAN
@@ -21,7 +20,7 @@ channel_metadata = {
         'channel_name': '104',
         'channel_logo': 'https://yt3.googleusercontent.com/JO8MicN497ze8WVXcu-wmA2WAMqhO8UIQhslV3VhiRu1kaQU3r9nOB4IVkmUt0ALC23DVSSp=s160-c-k-c0x00ffffff-no-rj',
     },
-    'UCup3etEdjyF1L3sRbU-rKLw': {  # 24NEWS
+    '@drmsportstvnetwork': {  # 24NEWS
         'group_title': 'news',
         'channel_name': '105',
         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_mcjICfjqYwOn4eljNmtsZLBpOmW0t0JlzJUhXSslAkBVo=s160-c-k-c0x00ffffff-no-rj',
@@ -104,6 +103,7 @@ channel_metadata = {
         'channel_logo': 'https://yt3.googleusercontent.com/ytc/AIdro_kLTXHZwzmSJJh3W6bm_134dfLEh_vjEpjL8QE8Yn4l6cs=s160-c-k-c0x00ffffff-no-rj',
     },
 }
+
 
 
 
