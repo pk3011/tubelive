@@ -49,7 +49,7 @@ channel_metadata = {
         'channel_name': '10',
         'channel_logo': 'https://yt3.googleusercontent.com/DdtUl06VkqvZvr9aDFP6iX-qxWxV5Aqlk1d4mTUdD1E34wwX333DKo56iJiSJ3hojEeeW_kVzEc=s160-c-k-c0x00ffffff-no-rj',
     },
-    '9BWncKJwWAI': {  # NEWS NATION
+    'D5Lu_FRa8BQ': {  # NEWS NATION
         'group_title': 'News',
         'channel_name': '11',
         'channel_logo': 'https://yt3.googleusercontent.com/ceDID2koAfvhvykNroiBjW4SkTrkGVrjFk1EkWRz8SZdhV_dFsCtuJ3w9l0D-y06VgHjvB-WqA=s160-c-k-c0x00ffffff-no-rj',
@@ -74,7 +74,7 @@ channel_metadata = {
         'channel_name': '15',
         'channel_logo': 'https://yt3.googleusercontent.com/0pVAsTdgTX-iREI9xZUMsYbqjpclujOiC7mocZIvLlWYVmhKRP131kzwVzM-i63lQz2YMMXo=s160-c-k-c0x00ffffff-no-rj',
     },
-    '5OELrhIb3q0': {  # DD INDIA
+    'TBlxk1kH9dM': {  # DD INDIA
         'group_title': 'News',
         'channel_name': '16',
         'channel_logo': 'htent.com/ou3JhDnH8ChdzRKooH5hGjTRGKpr9dGhi7lv7QW2zgmrnme0HbPKc8qI3yu8ZdI6NZna-CdJFw=s160-c-k-c0x00ffffff-no-rj',
@@ -145,6 +145,7 @@ channel_metadata = {
         'channel_logo': 'https://yt3.googleusercontent.com/66cO7vPXs2Xssf6fq2cn90oDsJ3OFMThb57qfRkRMjaSqg3ouTG6m9WQKZFg6GmUS5G8wkPu7ik=s72-c-k-c0x00ffffff-no-rj',
     },
 }
+
 
 
 
