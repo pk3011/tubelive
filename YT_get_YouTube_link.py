@@ -3,9 +3,9 @@ import datetime
 import yt_dlp
 import os
 import logging
-from YTC_channels import channel_metadata
+from YT_channels import channel_metadata
 
-# ---------------- LOGGING ----------------
+# --- Setup logging ---
 logger = logging.getLogger("yt_logger")
 logger.setLevel(logging.INFO)
 handler = logging.StreamHandler()
@@ -13,118 +13,140 @@ formatter = logging.Formatter('[%(levelname)s] %(asctime)s - %(message)s')
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 
-# ---------------- COOKIES ----------------
+# --- Cookies file ---
 cookies_file_path = 'cookies.txt'
 if not os.path.exists(cookies_file_path):
     raise FileNotFoundError(f"Missing cookies file: {cookies_file_path}")
 
-# ---------------- FALLBACK ----------------
+# --- Fallback m3u8 ---
 FALLBACK_M3U8 = "https://raw.githubusercontent.com/benmoose39/YouTube_to_m3u/refs/heads/main/assets/moose-403.m3u8"
 
-# ---------------- STABLE USER AGENT ----------------
-USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/122.0.6267.70 Safari/537.36"
-)
+# --- User-Agent generator ---
+def get_user_agent():
+    versions = [
+        (122, 6267, 70), (121, 6167, 131), (120, 6099, 109)
+    ]
+    major, build, patch = random.choice(versions)
+    return (
+        f"Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        f"AppleWebKit/537.36 (KHTML, like Gecko) "
+        f"Chrome/{major}.0.{build}.{patch} Safari/537.36"
+    )
 
-BASE_HEADERS = {
-    "User-Agent": USER_AGENT,
-    "Accept-Language": "en-US,en;q=0.9",
-    "Referer": "https://www.youtube.com/"
-}
-
-# ---------------- GET LIVE PAGE ----------------
-def get_live_watch_url(channel_id):
-    url = f"https://www.youtube.com/channel/{channel_id}/live"
-
+# --- Get live YouTube URL (from video ID) ---
+def get_live_watch_url(video_id):
+    url = f"https://www.youtube.com/live/{video_id}"
     ydl_opts = {
-        "cookiefile": cookies_file_path,
-        "quiet": True,
-        "no_warnings": True,
-        "force_ipv4": True,
-        "http_headers": BASE_HEADERS,
+        'cookiefile': cookies_file_path,
+        'force_ipv4': True,
+        'http_headers': {
+            'User-Agent': get_user_agent(),
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Referer': 'https://www.youtube.com/',
+            'Sec-Fetch-Mode': 'navigate',
+        },
+        'quiet': True,
+        'no_warnings': True,
     }
 
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(url, download=False)
-            if info and info.get("is_live"):
-                return info.get("webpage_url")
+            if not info:
+                return None
+
+            # Ensure video is live
+            if info.get("is_live"):
+                return info.get("webpage_url") or f"https://www.youtube.com/watch?v={info['id']}"
+    except yt_dlp.utils.DownloadError:
+        return None
     except Exception as e:
-        logger.error(f"Live check failed for {channel_id}: {e}")
+        logger.error(f"Unexpected error for video {video_id}: {e}")
+        return None
 
     return None
 
-# ---------------- GET HLS STREAM ----------------
-def get_stream_url(watch_url):
+# --- Get m3u8 stream URL ---
+def get_stream_url(url):
     ydl_opts = {
-        "format": "best[protocol^=m3u8]/best",
-        "cookiefile": cookies_file_path,
-        "quiet": True,
-        "no_warnings": True,
-        "force_ipv4": True,
-        "http_headers": BASE_HEADERS,
-        "extractor_args": {
-            "youtube": {
-                "player_client": ["android", "web"],
-                "skip": ["translated_subs"]
-            }
+        'format': 'best',
+        'cookiefile': cookies_file_path,
+        'force_ipv4': True,
+        'retries': 10,
+        'fragment_retries': 10,
+        'skip_unavailable_fragments': True,
+        'extractor_args': {'youtube': {'skip': ['translated_subs']}},
+        'http_headers': {
+            'User-Agent': get_user_agent(),
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Referer': 'https://www.youtube.com/',
+            'Sec-Fetch-Mode': 'navigate',
         },
+        'quiet': True,
+        'no_warnings': True
     }
 
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-            info = ydl.extract_info(watch_url, download=False)
-
-            for f in info.get("formats", []):
-                if f.get("protocol") == "m3u8_native" and f.get("url"):
-                    return f["url"]
-
+            info = ydl.extract_info(url, download=False)
+            return next(
+                (fmt['manifest_url'] for fmt in info['formats']
+                 if fmt.get('protocol') in ['m3u8', 'm3u8_native']),
+                None
+            )
     except Exception as e:
-        logger.error(f"HLS fetch failed: {e}")
+        logger.error(f"Failed to get stream URL for {url}: {e}")
+        return None
 
-    return None
-
-# ---------------- FORMAT M3U ----------------
-def format_live_link(name, logo, link, group):
+# --- Format M3U line ---
+def format_live_link(channel_name, channel_logo, m3u8_link, group_title):
     return (
-        f'#EXTINF:-1 group-title="{group}" tvg-logo="{logo}",{name}\n'
-        f'{link}'
+        f'#EXTINF:-1 group-title="{group_title}" tvg-logo="{channel_logo}", {channel_name}\n'
+        f'{m3u8_link}'
     )
 
-# ---------------- SAVE M3U ----------------
-def save_m3u_file(data, filename="YT_playlist_YTC.m3u"):
-    with open(filename, "w", encoding="utf-8") as f:
-        f.write("#EXTM3U\n")
-        f.write(f"# Updated: {datetime.datetime.now()}\n")
-        for line in data:
-            f.write(line + "\n")
+# --- Save M3U file ---
+def save_m3u_file(output_data, base_filename="YT_playlist"):
+    filename = f"{base_filename}.m3u"
 
-    logger.info(f"M3U saved: {filename}")
+    with open(filename, "w", encoding="utf-8") as file:
+        file.write("#EXTM3U\n")
+        file.write(f"# Updated on {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+        for data in output_data:
+            file.write(data + "\n")
+    logger.info(f"M3U playlist saved as {filename}")
 
-# ---------------- MAIN ----------------
+# --- Main process ---
 def main():
-    output = []
+    output_data = []
 
-    for channel_id, meta in channel_metadata.items():
-        name = meta.get("channel_name", "Unknown")
-        logo = meta.get("channel_logo", "")
-        group = meta.get("group_title", "YouTube Live")
+    for video_id, metadata in channel_metadata.items():  # <-- video_id instead of channel_id
+        group_title = metadata.get('group_title', 'Others')
+        channel_name = metadata.get('channel_name', 'Unknown')
+        channel_logo = metadata.get('channel_logo', '')
 
-        logger.info(f"Checking {name}")
+        logger.info(f"Checking channel: {channel_name}")
 
-        watch = get_live_watch_url(channel_id)
-        if not watch:
-            logger.warning(f"{name}: offline → fallback")
-            hls = FALLBACK_M3U8
+        live_link = get_live_watch_url(video_id)
+        if not live_link:
+            logger.warning(f"{channel_name}: not live → using fallback")
+            m3u8_link = FALLBACK_M3U8
         else:
-            hls = get_stream_url(watch) or FALLBACK_M3U8
+            m3u8_link = get_stream_url(live_link)
+            if not m3u8_link:
+                logger.warning(f"{channel_name}: no stream link → using fallback")
+                m3u8_link = FALLBACK_M3U8
 
-        output.append(format_live_link(name, logo, hls, group))
+        formatted_info = format_live_link(
+            channel_name, channel_logo, m3u8_link, group_title
+        )
+        output_data.append(formatted_info)
 
-    save_m3u_file(output)
+    if output_data:
+        save_m3u_file(output_data)
+    else:
+        logger.warning("No live streams found for any channels.")
 
-# ---------------- RUN ----------------
-if __name__ == "__main__":
+# --- Entry point ---
+if __name__ == '__main__':
     main()
